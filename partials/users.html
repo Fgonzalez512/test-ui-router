@@ -1,0 +1,7 @@
+<div>
+  <h3>Users:</h3>
+  <ul ng-repeat="user in users">
+    <li><a ui-sref="home" ng-click="CurrentUserService.setCurrentUser(user)">{{ user.name }}</a></li>
+  </ul>
+  <ui-view></ui-view>
+</div>
